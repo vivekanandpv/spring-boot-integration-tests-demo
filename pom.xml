@@ -41,21 +41,28 @@
 			<version>2.2.224</version>
 		</dependency>
 
-		<!-- Cucumber for Spring Boot -->
+		<!-- Cucumber Core Dependencies -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-spring</artifactId>
-			<version>7.13.0</version>
+			<version>7.14.0</version> <!-- Check for the latest version -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.14.0</version>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Cucumber JUnit 5 Platform -->
+		<!-- Cucumber JUnit 5 Integration -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit-platform-engine</artifactId>
-			<version>7.13.0</version>
+			<version>7.14.0</version>
 			<scope>test</scope>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite-api -->
 		<dependency>
@@ -65,13 +72,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-java</artifactId>
-			<version>7.14.0</version>  <!-- Use the latest stable version -->
-			<scope>test</scope>
-		</dependency>
-		
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
@@ -144,6 +144,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		
 	</build>
 
 </project>
