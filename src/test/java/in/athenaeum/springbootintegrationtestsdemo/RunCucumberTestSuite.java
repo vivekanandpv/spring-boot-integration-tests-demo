@@ -13,8 +13,5 @@ import static io.cucumber.junit.platform.engine.Constants.*;
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "in.athenaeum.springbootintegrationtestsdemo.steps")
-//@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, json:target/cucumber-report.json")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty,summary,progress,usage")
-@ConfigurationParameter(key = EXECUTION_DRY_RUN_PROPERTY_NAME, value = "true")
-public class RunCucumberTest {
+public class RunCucumberTestSuite {
 }
